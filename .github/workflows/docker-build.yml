@@ -9,4 +9,4 @@ jobs:
       - name: Docker image
         uses: docker/build-push-action@v6
         with:
-          file: ./guest-book-in-memory/guest-book-in-memory/dockerfile
+          file: ./guest-book-in-memory/dockerfile
