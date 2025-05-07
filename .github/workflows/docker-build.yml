@@ -7,4 +7,4 @@ jobs:
       - name: Checkout repostory
         uses: actions/checkout@v4
       - name: Docker image
-        uses: docker/build-push-actionv@6
+        uses: docker/build-push-action@v6
