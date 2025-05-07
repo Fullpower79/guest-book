@@ -8,3 +8,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Docker image
         uses: docker/build-push-action@v6
+        with:
+          file: ./guest-book-in-memory/guest-book-in-memory/dockerfile
