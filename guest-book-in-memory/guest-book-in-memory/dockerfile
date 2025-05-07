@@ -1,0 +1,7 @@
+FROM ubuntu:latest
+WORKDIR /app
+COPY guest-book-in-memory .
+RUN apt-get update && apt-get install -y nodejs npm
+RUN npm install
+CMD ["node", "app.js"]
+EXPOSE 3000
