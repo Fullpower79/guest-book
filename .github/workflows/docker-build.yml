@@ -1,0 +1,10 @@
+name: build
+on: push
+jobs:
+  build-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repostory
+        uses: actions/checkout@v4
+      - name: Docker image
+        uses: docker/build-push-actionv@6
